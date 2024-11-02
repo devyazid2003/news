@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/fav.png">
+    <link href="Inter-VariableFont_slnt,wght.ttf">
+</head>
+<body>
+    <div class="content">
+        <div class="nav">
+        <div class="nav-img">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Logo" class="logi">
+            </a>
+        </div>
+            <div class="nav-toggle">
+             <img src="img/icon-menu.svg" onclick="show()" id="menu-btn">
+            
+            </div>
+            <div class="link">
+            <ul class>
+                <li><a href="#" id="nav-txt">Home</a></li>
+                <li><a href="#" id="nav-txt">New</a></li>
+                <li><a href="#" id="nav-txt">Popular</a></li>
+                <li><a href="#" id="nav-txt">Trending</a></li>
+                <li><a href="#" id="nav-txt">Categories</a></li>
+            </ul>
+            </div>
+        </div>
+    <div id="opacity" onclick="disappear()">
+    <div class="sidebar" id="side" >
+        <div class="remover-container">
+        <img src="img/icon-menu-close.svg" onclick="remover()" id="remover">
+    </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="main">
+        <div class="section1">
+        <div class="bright">
+            <div class="first">
+                <div class="first-img"></div>
+                <div class="first-text">
+                    <div class="first-h1">
+                        <h1 class="future">The Bright Future of Web 3.0?</h1>
+                    </div>
+                    <div class="first-p">
+                        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands ofthe people, But is it really fullfilling it's promise? </p>
+                    <button class="read">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new">
+            <div class="side">
+                <div class="first-side">
+                <h1 class="h1-side">New</h1>
+                <h3 class="h3-side">Hydrogen vs Electric Cars</h3>
+                <p class="p-side">Will hydrogen fuelled cars ever catch upto EVs?</p>
+                <hr class="hr-side">
+                </div>
+                <div class="first-side">
+                    <h3 class="h3-side">The Downside of AI Artistry </h3>
+                    <p class="p-side">What are the possible adverse effects of on demand AI image generation</p>
+                    <hr class="hr-side">
+                </div>
+                <div class="first-side">
+                        <h3 class="h3-side">Is VC Funding Drying Up?</h3>
+                        <p class="p-side">VC funding by private firms is doen 50% YOY, We take a look at what that means </p>
+                 </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="bottom-flex">
+            <div class="flex">
+                <div class="flex-img" ></div>
+                <div class="flex-text">
+                    <h1 class="one">01</h1>
+                    <h3 class="re">Reviving Retro PCs</h3>
+                    <p class="what">What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-img2" ></div>
+                <div class="flex-text">
+                    <h1 class="one">02</h1>
+                    <h3 class="re">Top Ten Laptops of 2022</h3>
+                    <p class="what">Our best picks for various needs and budgets</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex-img3" ></div>
+                <div class="flex-text">
+                    <h1 class="one">03</h1>
+                    <h3 class="re">The Growth of Gaming</h3>
+                    <p class="what">How the pandemic has sparked fresh oppurtunities.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer></footer>
+    </div>
+
+    <script>
+        function show() {
+           document.getElementById('side').style.display="block";
+           document.getElementById('opacity').style.display = "block";
+           
+        
+           
+        }
+        function remover() {
+           document.getElementById('side').style.display="none";
+           document.getElementById('menu-btn').style.display = "block";
+           document.getElementById('opacity').style.display = "none";
+           
+        }
+
+        function disappear() {
+           document.getElementById('side').style.display="none";
+           document.getElementById('menu-btn').style.display = "block";
+           document.getElementById('opacity').style.display = "none";
+           
+        }
+
+    </script>
+
+</body>
+</html>

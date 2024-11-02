@@ -1,0 +1,519 @@
+body {
+    margin: 0;
+    padding: 3%;
+    padding-left: 12%;
+    
+  }
+
+  #opacity {
+    display: none;
+  }
+  
+  .content{
+    background-color: white;
+    width: 95%;
+    min-width: 617px;
+    height: 650px;
+    box-shadow: grey 5px 5px 5px 5px ;
+    box-sizing: border-box;
+  }
+  /*Header*/
+  .nav-img{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+
+  }
+  .nav{
+    width: 100%;
+    height: 100px;
+
+  }
+ 
+  .logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    width: 10%;
+    position: relative;
+    top: 30px;
+  }
+  
+  .logo img {
+   height: auto;
+    margin-right: 10px;
+  }
+  .link{
+    width: 50%;
+    min-width: 405px;
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 4%; 
+  }
+  .nav{
+    display: flex;
+    color: #D8BFD8;
+    padding: 1rem 0;
+    display: flex;
+    top: 30px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+  }
+  .link ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+
+  }
+  
+
+  ul {
+    margin-right: 2rem;
+    
+    
+  }
+  .link li {
+    margin: 0 1rem;
+  }
+  
+  .link a {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    color: black;
+    font-family: externalFont;
+  }
+  
+  link, a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  .sidebar{
+    display: none;
+  }
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  /*main styling*/
+  .section1{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 1%;
+  }
+  .bright{
+    width:60%;
+    height: 100%;
+    padding-left: 4%;
+  }
+  .new{
+    background-color: black;
+    width: 33%;
+    height: 100%;
+  }
+  .first{
+    width: 95%;
+    height: 95%;
+    box-sizing: border-box;
+  }
+  .first-img{
+    background-image:url('img/puzzle.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55%;
+  }
+  .first-text{
+    width: 100%;
+    height: 45%;
+    display: flex;
+  }
+  .first-h1{
+    width: 100%;
+    height: 100%;
+    font-family: externalFont;
+    box-sizing: border-box;
+    padding-top: 0;
+    
+  }
+  .future{
+    font-weight: bold; 
+    font-size: 30px;
+    width: 75%;
+  }
+  .first-p{
+    width: 100%;
+    height: 100%;
+    font-family: externalFont;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 1.5%;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: externalFont;
+    src: url("Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: external;
+    src: url("fonts/static/Inter-ExtraBold.TTF");
+  }
+  .read{
+    width: 150px;
+    padding: 10px;
+    font-family: externalFont;
+    font-weight: 600;
+    border-radius: 0px;
+    background-color: hsl(5, 85%, 63%);
+    border: 0px;
+    cursor: pointer;
+  }
+  .read:hover{
+    width: 150px;
+    padding: 10px;
+    font-family: externalFont;
+    font-weight: 600;
+    border-radius: 0px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+  }
+  .side{
+    width:80%;
+    height: 93%;
+    padding-left: 6%;
+  }
+  .h1-side{
+    color: hsl(35, 77%, 62%);
+    font-size:23px ;
+    font-family: externalFont;
+  }
+  .h3-side{
+    color: white;
+    font-size: 14px;
+    font-family: externalFont;
+    cursor: pointer;
+  }
+  .h3-side:hover{
+    color:hsl(35, 77%, 62%) ;
+    font-size: 14px;
+    font-family: externalFont;
+    cursor: pointer;
+  }
+  .p-side{
+    color: white;
+    font-size: 12px;
+    font-family: externalFont;
+  }
+  .hr-side{
+    color: hsl(233, 8%, 79%);
+  }
+  .first-side{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .bottom-flex{
+    display: flex;
+    gap: 20px;
+    height: 145px;
+    padding-left: 4%;
+    margin-top: 5%;
+  }
+  .flex-img{
+    width: 30%;
+    height: auto;
+    background-image: url("img/image-retro-pcs.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .flex-img2{
+    width: 30%;
+    height: auto;
+    background-image: url("img/image-top-laptops.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .flex-img3{
+    width: 30%;
+    height: auto;
+    background-image: url("img/image-gaming-growth.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .flex{
+  display: flex;
+  width: 30%;
+  box-sizing: border-box;
+  gap: 25px;
+  }
+  .flex-text{
+    width:70% ;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .one{
+    color: hsl(5, 85%, 63%);
+    font-family: externalFont;
+    font-family: 20px;
+  }
+  .re{
+    font-family: externalFont;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .re:hover{
+    font-family: externalFont;
+    font-size: 13px;
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+  }
+  .what{
+    font-family: externalFont;
+    font-size: 12px;
+  }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .content{
+        background-color: white;
+        width: 100vw;
+        min-width: 375px;
+        height: 1200px;
+        box-shadow: none;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        padding-left: 0%;
+        
+      }
+      .link{
+        display: none;
+      }
+      .section1{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+      }
+      .main{
+        width: 90vw;
+      }
+      .first-img{
+        background-image:url('img/puzzle.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 90vw;
+        height: 55%;
+      }
+      .first-text{
+        width: 90vw;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      
+  .first-h1{
+    width: 90vw;
+    height: 100%;
+    font-family: externalFont;
+    box-sizing: border-box;
+    padding-top: 0;
+    
+  }
+  .future{
+    font-weight: bold; 
+    font-size: 30px;
+    width: 70vw;
+  }
+  .first-p{
+    width: 100%;
+    height: 100%;
+    font-family: externalFont;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 1.5%;
+    box-sizing: border-box;
+  }
+
+
+      .new{
+        background-color: black;
+        width: 90vw;
+        height: 100%;
+        margin-top: 50%;
+        margin-left: 3%;
+      }
+
+      .bottom-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding-left: 4%;
+        margin-top: 125%;
+        height: 100%;
+        margin-bottom: 15%;
+    
+      }
+      .flex-img{
+        width: 30%;
+        height: auto;
+        background-image: url("img/image-retro-pcs.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .flex-img2{
+        width: 30%;
+        height: auto;
+        background-image: url("img/image-top-laptops.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .flex-img3{
+        width: 30%;
+        height: auto;
+        background-image: url("img/image-gaming-growth.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    
+      .flex{
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      gap: 25px;
+      }
+      .flex-text{
+        width:70% ;
+        height: auto;
+        box-sizing: border-box;
+      }
+      .nav-img{
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .logo {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 8%;
+        display: flex;
+        align-items: center;
+        width: 10%;
+        position: relative;
+        top: 30px;
+      }
+      .nav-toggle{
+        display: block;
+        width: 60%;
+      }
+      .nav-toggle img{
+        float: right;
+        padding-top: 26%;
+      }
+
+      .remover-container {
+        width: 100%;
+        display: flex;
+        
+        justify-content: right;
+      }
+
+
+      #opacity {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #D8BFD8;
+        padding-top: 2rem;
+        padding-left: 1px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        z-index: 100;
+        cursor: pointer;
+        display: none;  
+      }
+
+
+      #side {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        color: black;
+        padding-top: 2rem;
+        padding-left: 1px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        z-index: 100;
+        cursor: pointer;
+      }
+      #remover:hover{
+        cursor: pointer;
+      }
+      #remover{
+        cursor: pointer;
+      }
+      
+      
+      
+      #side ul {
+        list-style: none;
+        padding: 5%;
+        margin-top: 2rem;
+      }
+      
+      #side li {
+        margin-bottom: 1rem;
+        list-style-type: none;
+      }
+      
+      #side a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+        font-family: externalFont;
+      }
+      
+      #side a:hover {
+        color:  hsl(5, 85%, 63%);
+      }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
